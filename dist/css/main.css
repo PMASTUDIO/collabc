@@ -1,0 +1,64 @@
+body {
+    margin: 0 auto;
+    padding: 0;
+    background-color: #333;
+    height: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .app {
+    height: 100%;
+  }
+  
+  ul li {float: left;}
+  
+  ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  ul li a:hover:not(.active) {background-color: #111;}
+  
+  ul li a.active {background-color: #4CAF50;}
+  
+  ul li.right {float: right;}
+  
+  @media screen and (max-width: 600px) {
+    ul li.right, 
+    ul li {float: none;}
+  }
+
+  header {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 20px;
+    height: 250px;
+    background-position-y: center;
+    background-image: url("../images/banner.jpg");
+    color: #FFFFFF;
+    font-size: 50px;
+    text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
+  }
+
+  main {
+    height: 100%;
+  }
+
+  .mid-content{
+    background-color: #080b0f;
+    width: 80%;
+    margin: 30px auto;
+    border-radius: 10px;
+    color: #f2f4f7;
+    padding: 25px;
+  }
