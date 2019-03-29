@@ -1,2 +1,3 @@
-# collabc
-Collaborate project
+# Collabc
+Collabc React Project
+Find your next project
