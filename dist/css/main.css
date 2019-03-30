@@ -62,7 +62,32 @@ ul {
     padding: 25px;
   }
 
-  .responsiveLogo {
-    max-width: 45%;
-    height: auto;
+  .top-item {
+    height: 316px;
+    background-color: #FFFFFF;
+    border: 1px solid #d1d5d7;
+    padding: 15px;
+    margin: 42px;
+    color: #7e868e;
+    text-align: center;
+    transition: all .2s ease-in-out;
   }
+
+  .top-item:hover {
+    transform: scale(1.1);
+    box-shadow: 2px 2px 4px #000000;
+    -webkit-box-shadow: 7px 6px 41px -2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 7px 6px 41px -2px rgba(0,0,0,0.75);
+    box-shadow: 7px 6px 41px -2px rgba(0,0,0,0.75);
+  }
+
+  .top-item h2 {
+    color: #111;
+    font-weight: bold;
+  }
+
+  .mid-content h1 {
+    font-weight: bold;
+    text-decoration: uppcase;
+  }
+
