@@ -8,7 +8,7 @@ export default class HomePage extends React.Component {
     render() {
         return (
             [<header key="header">
-                <h1>Collabc</h1>
+                <img className="responsiveLogo" src="./images/Logo.png"></img>
             </header>,
             <main key="main">
                 <div className="mid-content">

@@ -55,10 +55,14 @@ ul {
   }
 
   .mid-content{
-    background-color: #080b0f;
     width: 80%;
     margin: 30px auto;
     border-radius: 10px;
     color: #f2f4f7;
     padding: 25px;
+  }
+
+  .responsiveLogo {
+    max-width: 45%;
+    height: auto;
   }
