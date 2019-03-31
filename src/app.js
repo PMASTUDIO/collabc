@@ -40,6 +40,7 @@ export default class App extends React.Component {
 
                 <Route exact path="/" render={() => <HomePage />}/>
                 <Route path="/search" render={() => <p>Search a project</p>}/>
+
             </BrowserRouter>
         );
     }
