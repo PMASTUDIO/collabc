@@ -24,7 +24,7 @@ export default class App extends React.Component {
                             </li>
                         }
                         <li>
-                            <Link to="/search">Find a project</Link>
+                            <a href="#search">Find a project</a>
                         </li>
                         <li>
                             <Link to="/contact">Contact</Link>
@@ -38,8 +38,15 @@ export default class App extends React.Component {
                     </ul>
                 </nav>
 
+                <div id="search">
+                    <button type="button" className="close">×</button>
+                    <form>
+                        <input type="search" placeholder="type keyword(s) here" />
+                        <button type="submit" className="btn btn-primary">Search</button>
+                    </form>
+                </div>
+
                 <Route exact path="/" render={() => <HomePage />}/>
-                <Route path="/search" render={() => <p>Search a project</p>}/>
 
             </BrowserRouter>
         );
