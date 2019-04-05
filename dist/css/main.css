@@ -1,8 +1,10 @@
 body {
     margin: 0 auto;
     padding: 0;
-    background-color: #333;
+    background-color: #ffffff;
     height: 100%;
+    background-image: url('../images/banner.jpg');
+    background-position: center;
 }
 
 ul {
@@ -39,13 +41,11 @@ ul {
   }
 
   header {
-    background-color: #F1F1F1;
     text-align: center;
     padding: 20px;
     height: 250px;
     background-position-y: center;
-    background-image: url("../images/banner.jpg");
-    color: #FFFFFF;
+    color: #000000;
     font-size: 50px;
     text-shadow: 1px 3px 0 #969696, 1px 13px 5px #aba8a8;
   }
@@ -58,7 +58,7 @@ ul {
     width: 80%;
     margin: 30px auto;
     border-radius: 10px;
-    color: #f2f4f7;
+    color: #000000;
     padding: 25px;
   }
 
@@ -201,3 +201,37 @@ ul {
     padding: 10px 17px;
     font-size: 27px;
   }
+
+  .active-pink-2 input[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #f48fb1;
+    box-shadow: 0 1px 0 0 #f48fb1;
+}
+.active-pink input[type=text] {
+    border-bottom: 1px solid #f48fb1;
+    box-shadow: 0 1px 0 0 #f48fb1;
+}
+.active-purple-2 input[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #ce93d8;
+    box-shadow: 0 1px 0 0 #ce93d8;
+}
+.active-purple input[type=text] {
+    border-bottom: 1px solid #ce93d8;
+    box-shadow: 0 1px 0 0 #ce93d8;
+}
+.active-cyan-2 input[type=text]:focus:not([readonly]) {
+    border-bottom: 1px solid #4dd0e1;
+    box-shadow: 0 1px 0 0 #4dd0e1;
+}
+.active-cyan input[type=text] {
+    border-bottom: 1px solid #4dd0e1;
+    box-shadow: 0 1px 0 0 #4dd0e1;
+}
+.active-cyan .fa, .active-cyan-2 .fa {
+    color: #4dd0e1;
+}
+.active-purple .fa, .active-purple-2 .fa {
+    color: #ce93d8;
+}
+.active-pink .fa, .active-pink-2 .fa {
+    color: #f48fb1;
+}
