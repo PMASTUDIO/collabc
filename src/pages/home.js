@@ -15,9 +15,14 @@ export default class HomePage extends React.Component {
             </header>,
             <main key="main">
                 <div className="container">
-                    <div className="md-form active-cyan-2 mb-3">
-                        <input className="form-control" type="text" placeholder="Search" aria-label="Search"></input>
-                    </div>
+                    <form className="navbar-form" role="search">
+                        <div className="input-group add-on">
+                            <input className="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text"/>
+                            <div className="input-group-btn">
+                                <button className="btn btn-default" type="submit"><i className="glyphicon glyphicon-search"></i></button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
                 
                 <div className="mid-content container text-center">
