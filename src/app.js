@@ -16,21 +16,23 @@ export default class App extends React.Component {
                 <nav>
                     <ul>
                         <li>
-                            <Link to="/">Search</Link>
+                            <Link to="/">Home</Link>
                         </li>
                         {this.state.logged &&
                             <li>
                                 <Link to="/recommended">My Recommendations</Link>
                             </li>
                         }
-                        <li>
-                            <Link to="/contact">Contact</Link>
-                        </li>
+                        
                         {!this.state.logged && 
                             <li>
                                 <Link to="/register">Register</Link>
                             </li>
                         }
+
+                        <li>
+                            <a target="_blanc" href="https://www.cognitoforms.com/PASP2/Contact">Contact</a>
+                        </li>
                         
                     </ul>
                 </nav>
