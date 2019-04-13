@@ -62,7 +62,7 @@ export default class HomePage extends React.Component {
                                 </div>
                                 <div className="modal-footer">
                                     <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" className="btn btn-primary">Save changes</button>
+                                    <button type="button" className="btn"><i className="fas fa-star"></i></button>
                                 </div>
                                 </div>
                             </div>
