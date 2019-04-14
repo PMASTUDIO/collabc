@@ -33,7 +33,7 @@ export default class HomePage extends React.Component {
                     <div className="input-group add-on">
                         <input className="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text"/>
                         <div className="input-group-btn">
-                            <button className="btn btn-light" type="submit"><i className="fas fa-search"></i></button>
+                            <button className="btn btn-white" type="submit"><i className="fas fa-search"></i></button>
                         </div>
                     </div>
                 </div>

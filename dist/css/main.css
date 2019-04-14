@@ -280,3 +280,23 @@ ul li a:hover {
     margin-top: 20px;
   }
 }
+
+.btn-white {
+  background-color: white;
+    border-radius: 0px;
+    border: 1px solid rgb(206, 212, 218);
+}
+
+
+/* Form css */
+#formRegisterHolder {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; 
+
+  display: flex;
+  align-items: center;
+}
+
+.form-control {
+  width: 100%;
+}
