@@ -27,7 +27,7 @@ export default class App extends React.Component {
                         
                         {!this.state.logged && 
                             <li>
-                                <Link to="/register">Register</Link>
+                                <Link to="/register">Login / Register</Link>
                             </li>
                         }
 

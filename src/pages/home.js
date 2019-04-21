@@ -30,12 +30,15 @@ export default class HomePage extends React.Component {
             </header>,
             <main key="main">
                 <div className="container">
-                    <div className="input-group add-on">
-                        <input className="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text"/>
-                        <div className="input-group-btn">
-                            <button className="btn btn-white" type="submit"><i className="fas fa-search"></i></button>
+                    <div className="row">
+                        <div className="input-group add-on input-search-main">
+                            <input className="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text"/>
+                            <div className="input-group-btn">
+                                <button className="btn btn-white" type="submit"><i className="fas fa-search"></i></button>
+                            </div>
                         </div>
                     </div>
+                    
                 </div>
                 
                 <div className="mid-content container text-center">
@@ -62,7 +65,7 @@ export default class HomePage extends React.Component {
                                 </div>
                                 <div className="modal-footer">
                                     <button type="button" className="btn btn-secondary" data-dismiss="modal">Close</button>
-                                    <button type="button" className="btn"><i className="fas fa-star"></i></button>
+                                    <button type="button" className="btn-null"><i className="fas fa-star"></i></button>
                                 </div>
                                 </div>
                             </div>
