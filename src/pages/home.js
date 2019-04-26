@@ -24,7 +24,26 @@ export default class HomePage extends React.Component {
                         descriptionLong: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime totam hic deserunt consequatur atque sapiente ipsam nemo, dolores rem? At, non sed minima nobis doloribus rerum perspiciatis maxime officia officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro hic, iste accusamus praesentium deleniti rerum obcaecati explicabo cupiditate at, nisi amet deserunt officiis molestias nostrum atque vero! Enim, id expedita."
                     }]
                 }
+            ],
+            
+            searchCategories: [
+                {
+                    name: "Projects",
+                    projects: [
+                        {
+                            name: "Search result 1",
+                            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nesciunt animi expedita deserunt. Eos numquam nulla, non deserunt optio sequi commodi odit impedit corporis cupiditate. Quo deleniti numquam praesentium soluta.",
+                            descriptionLong: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime totam hic deserunt consequatur atque sapiente ipsam nemo, dolores rem? At, non sed minima nobis doloribus rerum perspiciatis maxime officia officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro hic, iste accusamus praesentium deleniti rerum obcaecati explicabo cupiditate at, nisi amet deserunt officiis molestias nostrum atque vero! Enim, id expedita."
+                        },
+                        {
+                            name: "Search result 2",
+                            description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nesciunt animi expedita deserunt. Eos numquam nulla, non deserunt optio sequi commodi odit impedit corporis cupiditate. Quo deleniti numquam praesentium soluta.",
+                            descriptionLong: "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maxime totam hic deserunt consequatur atque sapiente ipsam nemo, dolores rem? At, non sed minima nobis doloribus rerum perspiciatis maxime officia officiis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro hic, iste accusamus praesentium deleniti rerum obcaecati explicabo cupiditate at, nisi amet deserunt officiis molestias nostrum atque vero! Enim, id expedita."
+                        }]
+
+                }
             ]
+
         }
     }
 
@@ -49,9 +68,9 @@ export default class HomePage extends React.Component {
                 <div className="mid-content container text-center">
                     {this.state.categories.map((categoryMap, j) => (
                         <Category category={categoryMap} />
-                    ))}
-                    
+                    ))}    
                 </div>
+
             </main>]
         );
     }
