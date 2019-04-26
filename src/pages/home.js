@@ -26,7 +26,7 @@ export default class HomePage extends React.Component {
                 }
             ],
             
-            searchCategories: [
+            searchCategories: null /*[
                 {
                     name: "Projects",
                     projects: [
@@ -42,7 +42,7 @@ export default class HomePage extends React.Component {
                         }]
 
                 }
-            ]
+            ]*/
 
         }
     }
@@ -66,9 +66,15 @@ export default class HomePage extends React.Component {
                 </div>
                 
                 <div className="mid-content container text-center">
-                    {this.state.categories.map((categoryMap, j) => (
-                        <Category category={categoryMap} />
-                    ))}    
+                    {this.state.searchCategories ?
+                        this.state.searchCategories.map((categorySearch, j) => (
+                            <Category category={categorySearch} />
+                        ))
+                        :
+                        this.state.categories.map((categoryMap, j) => (
+                            <Category category={categoryMap} />
+                        ))
+                    }    
                 </div>
 
             </main>]
