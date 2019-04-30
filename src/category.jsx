@@ -5,14 +5,14 @@ export default class Category extends React.Component {
 
     render() {
         return (
-            [<h1 key="title" className="text-uppercase">{this.props.category.name}</h1>,
-            <div key="projects" className="row">
+            [<h1 key="titleCategory" className="text-uppercase">{this.props.category.name}</h1>,
+            <div key="projectsCategory" className="row">
                 {this.props.category.projects.map((project, i) => (
                     [<div key={i} className="col-sm-3 top-item">
-                    <h2>{project.name}</h2>
-                    <p >{project.description}</p>
-                    <button type="button" data-toggle="modal" data-target={"#modalMore" + i} className="btn btn-primary">More</button>
-                </div>,
+                        <h2>{project.name}</h2>
+                        <p >{project.description}</p>
+                        <button type="button" data-toggle="modal" data-target={"#modalMore" + i} className="btn btn-primary">More</button>
+                    </div>,
                 
                 <div key={"id" + i} className="modal fade" id={"modalMore" + i} tabIndex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
                     <div className="modal-dialog" role="document">
