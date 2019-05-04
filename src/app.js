@@ -1,6 +1,7 @@
 import React from 'react'
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 import HomePage from './pages/home'
+import LoginPage from './pages/login'
 import RegisterPage from './pages/register'
 
 export default class App extends React.Component {
@@ -27,7 +28,7 @@ export default class App extends React.Component {
                         
                         {!this.state.logged && 
                             <li>
-                                <Link to="/register">Login / Register</Link>
+                                <Link to="/login">Login / Register</Link>
                             </li>
                         }
 
@@ -39,6 +40,7 @@ export default class App extends React.Component {
                 </nav>
 
                 <Route exact path="/" render={() => <HomePage />}/>
+                <Route exact path="/login" render={() => <LoginPage />}/>
                 <Route exact path="/register" render={() => <RegisterPage />}/>
 
             </BrowserRouter>

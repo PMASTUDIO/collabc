@@ -1,7 +1,8 @@
 import React from 'react'
 import { BrowserRouter, Link } from 'react-router-dom'
 
-export default class RegisterPage extends React.Component {
+
+export default class LoginPage extends React.Component {
     constructor(){
         super();
     }
@@ -9,7 +10,7 @@ export default class RegisterPage extends React.Component {
     render() {
         return (
           <div className="containerCenter white-box">
-            <h1>Register</h1>
+            <h1>Login</h1>
             <form>
               <div className="form-group">
                 <label htmlFor="emailInput">Email address</label>
@@ -21,7 +22,7 @@ export default class RegisterPage extends React.Component {
               </div>
               <button type="submit" className="btn btn-primary">Log In</button>
               <BrowserRouter>
-                <Link to="/register" className="btn btn-dark right-button white-text">I already have an account</Link>
+                <Link to="/register" className="btn btn-dark right-button white-text">Create a new account</Link>
               </BrowserRouter>
             </form>
 

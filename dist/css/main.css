@@ -393,3 +393,7 @@ ul li a:hover {
 .right-button {
   float: right;
 }
+
+.white-text {
+  color: #fff !important;
+}
