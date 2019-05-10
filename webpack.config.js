@@ -1,20 +1,24 @@
-const TerserJS = require('terser-webpack-plugin')
-const OptimizeCssAssets = require('optimize-css-assets-webpack-plugin')
-const CopyPlugin = require('copy-webpack-plugin')
-const MiniCssExtractPlugin = require('mini-css-extract-plugin')
-const HtmlWebpackPlugin = require('html-webpack-plugin')
-const ImageminPlugin = require('imagemin-webpack-plugin').default
-const imageminOptipng = require('imagemin-optipng')
-const imageminJpegtran = require('imagemin-jpegtran')
+const TerserJS = require('terser-webpack-plugin');
+const OptimizeCssAssets = require('optimize-css-assets-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+const ImageminPlugin = require('imagemin-webpack-plugin').default;
+const imageminOptipng = require('imagemin-optipng');
+const imageminJpegtran = require('imagemin-jpegtran');
+const path = require('path');
 
 module.exports = {
+    output: {
+        path: path.resolve('./static/bundles/local/'),
+    },
     plugins: [
         new MiniCssExtractPlugin(),
         new HtmlWebpackPlugin({
             template: 'src/html/index.html'
         }),
         new CopyPlugin([{
-            from: 'dist/images/'
+            from: './src/images'
         }]),
         new ImageminPlugin({
             imageminOptions: {
