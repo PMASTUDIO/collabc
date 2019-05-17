@@ -10,12 +10,13 @@ const path = require('path');
 
 module.exports = {
     output: {
-        path: path.resolve('./static/bundles/local/'),
+        path: path.resolve('./frontEndMain/static/frontEndMain'),
     },
     plugins: [
         new MiniCssExtractPlugin(),
         new HtmlWebpackPlugin({
-            template: 'src/html/index.html'
+            template: 'src/html/index.html',
+            filename: "../../templates/frontEndMain/index.html"
         }),
         new CopyPlugin([{
             from: './src/images'
