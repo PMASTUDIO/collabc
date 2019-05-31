@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 import HomePage from './pages/home'
 import LoginPage from './pages/login'
+import RegisterPage from './pages/register'
 
 export default class App extends React.Component {
     constructor(){
@@ -43,6 +44,7 @@ export default class App extends React.Component {
 
                 <Route exact path="/" render={() => <HomePage />}/>
                 <Route exact path="/login" render={() => <LoginPage />}/>
+                <Route exact path="/register" render={() => <RegisterPage />}/>
 
             </BrowserRouter>
         );
