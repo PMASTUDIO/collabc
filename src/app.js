@@ -2,7 +2,6 @@ import React from 'react'
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 import HomePage from './pages/home'
 import LoginPage from './pages/login'
-import RegisterPage from './pages/register'
 
 export default class App extends React.Component {
     constructor(){
@@ -19,6 +18,9 @@ export default class App extends React.Component {
                     <ul>
                         <li>
                             <Link to="/">Home</Link>
+                        </li>
+                        <li>
+                            <a target="_" href="https://mailchi.mp/24e947836c37/collabc-interest">What is it?</a>
                         </li>
                         {this.state.logged &&
                             <li>
@@ -41,7 +43,6 @@ export default class App extends React.Component {
 
                 <Route exact path="/" render={() => <HomePage />}/>
                 <Route exact path="/login" render={() => <LoginPage />}/>
-                <Route exact path="/register" render={() => <RegisterPage />}/>
 
             </BrowserRouter>
         );

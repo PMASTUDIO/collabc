@@ -1,6 +1,6 @@
 import React from 'react'
-import { BrowserRouter, Link } from 'react-router-dom'
-
+import { BrowserRouter, Link, Route } from 'react-router-dom'
+import RegisterPage from './register'
 
 export default class LoginPage extends React.Component {
     constructor(){
@@ -23,6 +23,8 @@ export default class LoginPage extends React.Component {
               <button type="submit" className="btn btn-primary">Log In</button>
               <BrowserRouter>
                 <Link to="/register" className="btn btn-dark right-button white-text">Create a new account</Link>
+
+                <Route exact path="/register" render={() => <RegisterPage />}/>
               </BrowserRouter>
             </form>
 
