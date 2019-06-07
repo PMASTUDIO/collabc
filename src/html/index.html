@@ -7,9 +7,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projeto React</title>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
-<link href="{% static 'frontEndMain/vendors.css' %}" rel="stylesheet"><link href="{% static 'frontEndMain/main.css' %}" rel="stylesheet"><link href="{% static 'frontEndMain/vendors.css' %}" rel="stylesheet"><link href="{% static 'frontEndMain/main.css' %}" rel="stylesheet"></head>
+<link href="{% static 'frontEndMain/vendors.css' %}" rel="stylesheet"><link href="{% static 'frontEndMain/main.css' %}" rel="stylesheet">
 <body>
     <div class="app"></div>
     <script src="{% static 'frontEndMain/main.js' %}"></script>
-<script type="text/javascript" src="{% static 'frontEndMain/vendors.js' %}"></script><script type="text/javascript" src="{% static 'frontEndMain/main.js' %}"></script><script type="text/javascript" src="{% static 'frontEndMain/vendors.js' %}"></script><script type="text/javascript" src="{% static 'frontEndMain/main.js' %}"></script></body>
+    <script type="text/javascript" src=""></script><script type="text/javascript" src="{% static 'frontEndMain/vendors.js' %}"></script></body>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/static/frontEndMain/dist/sw.js').then(function(registration) {
+                // Registration was successful
+                console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function(err) {
+                // registration failed :(
+                console.log('ServiceWorker registration failed: ', err);
+                });
+            });
+        }
+    </script>
 </html>

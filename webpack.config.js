@@ -18,9 +18,12 @@ module.exports = {
             template: 'src/html/index.html',
             filename: "../../templates/frontEndMain/index.html"
         }),
-        new CopyPlugin([{
-            from: './src/images'
-        }]),
+        new CopyPlugin([
+            { from: './src/images' },
+            { from: './src/dist' },
+            { from: './src/manifest.json', to: '../' }
+
+        ]),
         new ImageminPlugin({
             imageminOptions: {
                 plugins: [
@@ -52,7 +55,7 @@ module.exports = {
         rules: [
             {
                 test: /\.(js|jsx)$/,
-                exclude: /node_modules/,
+                exclude: [/node_modules/, '/src/sw/sw.js'], 
                 use: {
                     loader: "babel-loader"
                 }
