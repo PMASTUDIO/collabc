@@ -50,7 +50,7 @@ export default class HomePage extends React.Component {
     render() {
         return (
             [<header key="header">
-                <img className="img-fluid" src="/static/frontEndMain/images/Logo.png"></img>
+                <img className="img-fluid" src="Logo.png"></img>
             </header>,
             <main key="main">
                 <div className="container">

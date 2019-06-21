@@ -10,19 +10,17 @@ const path = require('path');
 
 module.exports = {
     output: {
-        path: path.resolve('./frontEndMain/static/frontEndMain'),
+        path: path.resolve('./dist'),
     },
     plugins: [
         new MiniCssExtractPlugin(),
         new HtmlWebpackPlugin({
             template: 'src/html/index.html',
-            filename: "../../templates/frontEndMain/index.html"
+            filename: "./index.html"
         }),
         new CopyPlugin([
             { from: './src/images' },
             { from: './src/dist' },
-            { from: './src/manifest.json', to: '../' }
-
         ]),
         new ImageminPlugin({
             imageminOptions: {
