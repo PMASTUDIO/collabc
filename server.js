@@ -1,9 +1,14 @@
 const express = require('express')
 
 const app = express()
+const path = require('path')
 
 app.use(express.static('dist'));
 
-app.listen(80, (req, res) => {
-    console.log("Server initialized on port 2000")
+app.get('/', function(req, res) {
+    res.sendFile(path.join(__dirname, '/dist/index.html'));
+});
+
+app.listen(process.env.PORT || 80, (req, res) => {
+    console.log("Server initialized on port 80")
 })
