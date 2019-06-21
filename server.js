@@ -9,8 +9,6 @@ app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, '/dist/index.html'));
 });
 
-app.get('*')
-
 app.listen(process.env.PORT || 80, (req, res) => {
     console.log("Server initialized on port 80")
 })
