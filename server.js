@@ -5,6 +5,10 @@ const path = require('path')
 
 app.use(express.static('dist'));
 
+var redirectToHTTPS = require('express-http-to-https').redirectToHTTPS
+
+app.use(redirectToHTTPS([/localhost:(\d{4})/], [/\/insecure/], 301));
+
 app.get('/', function(req, res) {
     res.sendFile(path.join(__dirname, '/dist/index.html'));
 });
