@@ -3,13 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projeto React</title>
+    <title>Collabc Demo</title>
     <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#334FFF">
+    <meta name="description" content="A demo app for the front end bit of collabc - MVP">
+    <meta name="theme-color" content="#00B5DC">
+    <!-- CODELAB: Add iOS meta tags and icons -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#00B5DC">
+    <meta name="apple-mobile-web-app-title" content="Collabc Demo">
+    <link rel="apple-touch-icon" href="/icons/icon-152x152.png">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
 <link href="vendors.css" rel="stylesheet"><link href="main.css" rel="stylesheet">
 <body>
     <div class="app"></div>
     <script src="main.js"></script>
-    <script type="text/javascript" src="vendors.js"></script></body>
+    <script type="text/javascript" src="vendors.js"></script>
+    <script type="text/javascript" src="install.js"></script>
+    <script type="text/javascript">
+
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('/service-worker.js')
+                    .then((reg) => {
+                        console.log('Service worker registered.', reg);
+                    });
+                });
+        }
+
+    </script>
+</body>
 </html>  

@@ -1,8 +1,8 @@
 {
-  "name": "Collabc Project",
+  "name": "Collabc Demo",
   "short_name": "collabc",
-  "theme_color": "#2196f3",
-  "background_color": "#2196f3",
+  "theme_color": "#00B5DC",
+  "background_color": "#F2F1EF",
   "display": "standalone",
   "Scope": "/",
   "start_url": "/",
